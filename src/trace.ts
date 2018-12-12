@@ -1,4 +1,4 @@
-import { styledConsoleLog, getBlackString, getBlueString, getGreenString, getOrangeString, getPurpleString } from './../styled-console/styled-console';
+import { styledConsoleLog, getBlackString, getBlueString, getGreenString, getOrangeString, getPurpleString } from 'sprang-styled-console';
 import { overrideConstructor } from './decorator-utils';
 import { isUndefined } from 'lodash';
 
