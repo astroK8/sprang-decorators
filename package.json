@@ -1,6 +1,6 @@
 {
   "name": "sprang-decorators",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Various typescript decorators",
   "main": "build/decorators.js",
   "module": "es/decorators.js",
