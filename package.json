@@ -1,0 +1,37 @@
+{
+  "name": "sprang-decorators",
+  "version": "1.0.0",
+  "description": "Various typescript decorators",
+  "main": "build/decorators.js",
+  "module": "es/decorators.js",
+  "typings": "build/decorators.d.ts",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^3.1.6"
+  },
+  "scripts": {
+    "pretest": "npm run compile",
+    "test": "testem",
+    "compile": "npm run compile-es && npm run compile-commonjs",
+    "compile-es": "tsc --outDir es --module es6 --moduleResolution node",
+    "compile-commonjs": "tsc --outDir ./build",
+    "prepublishOnly": "npm run compile",
+    "release-major": "xyz --repo git@github.com:astroK8/sprang-styled-console.git --increment major",
+    "release-minor": "xyz --repo git@github.com:astroK8/sprang-styled-console.git --increment minor",
+    "release-patch": "xyz --repo git@github.com:astroK8/sprang-styled-console.git --increment patch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/astroK8/sprang-decorators.git"
+  },
+  "keywords": [
+    "angular",
+    "decorators"
+  ],
+  "author": "Aymeric Trotignon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/astroK8/sprang-decorators/issues"
+  },
+  "homepage": "https://github.com/astroK8/sprang-decorators#readme"
+}
